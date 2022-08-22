@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ikon/rt_imu_data_cpp/i2c.c
+stdio.h
+-
+unistd.h
+-
+string.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+sys/ioctl.h
+-
+arpa/inet.h
+-
+i2c.h
+/home/ikon/rt_imu_data_cpp/i2c.h
+
+/home/ikon/rt_imu_data_cpp/i2c.h
+sys/types.h
+-
+linux/i2c.h
+-
+linux/i2c-dev.h
+-
+

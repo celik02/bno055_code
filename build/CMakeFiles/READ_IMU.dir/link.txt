@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/READ_IMU.dir/main.cpp.o CMakeFiles/READ_IMU.dir/imu.cpp.o CMakeFiles/READ_IMU.dir/i2c.c.o  -o READ_IMU 
