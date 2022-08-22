@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/ikon/rt_imu_data_cpp/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++    -g   -o CMakeFiles/READ_IMU.dir/main.cpp.o -c /home/ikon/rt_imu_data_cpp/main.cpp",
+  "file": "/home/ikon/rt_imu_data_cpp/main.cpp"
+},
+{
+  "directory": "/home/ikon/rt_imu_data_cpp/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++    -g   -o CMakeFiles/READ_IMU.dir/imu.cpp.o -c /home/ikon/rt_imu_data_cpp/imu.cpp",
+  "file": "/home/ikon/rt_imu_data_cpp/imu.cpp"
+},
+{
+  "directory": "/home/ikon/rt_imu_data_cpp/build",
+  "command": "/usr/bin/aarch64-linux-gnu-gcc   -g   -o CMakeFiles/READ_IMU.dir/i2c.c.o   -c /home/ikon/rt_imu_data_cpp/i2c.c",
+  "file": "/home/ikon/rt_imu_data_cpp/i2c.c"
+}
+]

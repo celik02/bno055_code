@@ -60,15 +60,15 @@ include CMakeFiles/READ_IMU.dir/flags.make
 CMakeFiles/READ_IMU.dir/main.cpp.o: CMakeFiles/READ_IMU.dir/flags.make
 CMakeFiles/READ_IMU.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ikon/rt_imu_data_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/READ_IMU.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/READ_IMU.dir/main.cpp.o -c /home/ikon/rt_imu_data_cpp/main.cpp
+	/usr/bin/aarch64-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/READ_IMU.dir/main.cpp.o -c /home/ikon/rt_imu_data_cpp/main.cpp
 
 CMakeFiles/READ_IMU.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/READ_IMU.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ikon/rt_imu_data_cpp/main.cpp > CMakeFiles/READ_IMU.dir/main.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ikon/rt_imu_data_cpp/main.cpp > CMakeFiles/READ_IMU.dir/main.cpp.i
 
 CMakeFiles/READ_IMU.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/READ_IMU.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ikon/rt_imu_data_cpp/main.cpp -o CMakeFiles/READ_IMU.dir/main.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ikon/rt_imu_data_cpp/main.cpp -o CMakeFiles/READ_IMU.dir/main.cpp.s
 
 CMakeFiles/READ_IMU.dir/main.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/READ_IMU.dir/main.cpp.o.provides.build: CMakeFiles/READ_IMU.dir/main.
 CMakeFiles/READ_IMU.dir/imu.cpp.o: CMakeFiles/READ_IMU.dir/flags.make
 CMakeFiles/READ_IMU.dir/imu.cpp.o: ../imu.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ikon/rt_imu_data_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/READ_IMU.dir/imu.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/READ_IMU.dir/imu.cpp.o -c /home/ikon/rt_imu_data_cpp/imu.cpp
+	/usr/bin/aarch64-linux-gnu-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/READ_IMU.dir/imu.cpp.o -c /home/ikon/rt_imu_data_cpp/imu.cpp
 
 CMakeFiles/READ_IMU.dir/imu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/READ_IMU.dir/imu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ikon/rt_imu_data_cpp/imu.cpp > CMakeFiles/READ_IMU.dir/imu.cpp.i
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ikon/rt_imu_data_cpp/imu.cpp > CMakeFiles/READ_IMU.dir/imu.cpp.i
 
 CMakeFiles/READ_IMU.dir/imu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/READ_IMU.dir/imu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ikon/rt_imu_data_cpp/imu.cpp -o CMakeFiles/READ_IMU.dir/imu.cpp.s
+	/usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ikon/rt_imu_data_cpp/imu.cpp -o CMakeFiles/READ_IMU.dir/imu.cpp.s
 
 CMakeFiles/READ_IMU.dir/imu.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/READ_IMU.dir/imu.cpp.o.provides.build: CMakeFiles/READ_IMU.dir/imu.cp
 CMakeFiles/READ_IMU.dir/i2c.c.o: CMakeFiles/READ_IMU.dir/flags.make
 CMakeFiles/READ_IMU.dir/i2c.c.o: ../i2c.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ikon/rt_imu_data_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/READ_IMU.dir/i2c.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/READ_IMU.dir/i2c.c.o   -c /home/ikon/rt_imu_data_cpp/i2c.c
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/READ_IMU.dir/i2c.c.o   -c /home/ikon/rt_imu_data_cpp/i2c.c
 
 CMakeFiles/READ_IMU.dir/i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/READ_IMU.dir/i2c.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ikon/rt_imu_data_cpp/i2c.c > CMakeFiles/READ_IMU.dir/i2c.c.i
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ikon/rt_imu_data_cpp/i2c.c > CMakeFiles/READ_IMU.dir/i2c.c.i
 
 CMakeFiles/READ_IMU.dir/i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/READ_IMU.dir/i2c.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ikon/rt_imu_data_cpp/i2c.c -o CMakeFiles/READ_IMU.dir/i2c.c.s
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ikon/rt_imu_data_cpp/i2c.c -o CMakeFiles/READ_IMU.dir/i2c.c.s
 
 CMakeFiles/READ_IMU.dir/i2c.c.o.requires:
 
