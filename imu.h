@@ -14,6 +14,9 @@ extern "C" {
 #include "i2c.h"
 #include <string.h>
 #include <unistd.h>
+#include <arpa/inet.h>
+#include <vector>
+#include <fstream>
 
 #define _POWER_REGISTER 0x3E
 #define CONFIG_MODE 0x00
@@ -113,7 +116,16 @@ extern "C" {
 #define AXIS_REMAP_POSITIVE 0x00
 #define AXIS_REMAP_NEGATIVE  0x01
 
-void print_i2c_data(const unsigned char *data, size_t len);
+void print_i2c_data(char *data, size_t len);
+class dataxyz
+{
+    public:
+        double x;
+        double y;
+        double z;
+
+
+};
 
 class IMU_DRIVER
 {
@@ -122,16 +134,39 @@ class IMU_DRIVER
     */
     public:
         int bus;
+        // since these two used much
+        const char page_num0 = 0x00;
+        const char page_num1 = 0x01;
+        I2C_WRITE_HANDLE i2c_write_handle = i2c_write;
         IMU_DRIVER();
         ~IMU_DRIVER();
         I2CDevice device_;
         char filename[20];
         void connect(int adapter_nr_);
-        void write_register(unsigned int iaddr, unsigned char *buf, size_t len);
+        void write_register(unsigned int iaddr, const void *buf, size_t len);
         void read_register(unsigned int iaddr,  void *buf, size_t len);
         void _reset();
-        void set_mode(int new_mode);
-        void init();
-       
+        void set_mode(const char new_mode=AMG_MODE);
+        int init();
+        void set_accel_range(const char acc_mode = ACCEL_4G);
+        void set_gyro_range(const char gyro_mode = GYRO_2000_DPS); // max dps -> slow rotation will not be detected.
+        void set_magnet_rate(const char rate = MAGNET_30HZ);
+        void set_mag_op_mode(const char op_mode=MAGNET_ACCURACY_MODE);
+        void set_accel_bandwith(const char acc_bandwidth = ACCEL_62_5HZ);
+        void set_gyro_bandwidth(const char gyro_bandwidth=GYRO_32HZ);
+        int check_status_bit();
+        std::vector<int> calibration_status();
+        int calibrated();
+        std::vector<char> get_calibration_data();
+        void update_calibration(std::vector<char> calib_data);
+
+        //NOTE: for magnotometer FORCED mode is default so it kept that way
+        dataxyz read_accel(int print_data = 0);
+        dataxyz read_linear_accel(int print_data = 0);
+        dataxyz read_gyro(int print_data = 0);
+        dataxyz read_mag(int print_data = 0);
+
+
+
         
 };

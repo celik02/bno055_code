@@ -9,6 +9,7 @@ extern "C" {
 #include <linux/i2c.h>
 #include <linux/i2c-dev.h>
 
+
 /* I2c device */
 typedef struct i2c_device {
     int bus;			        /* I2C Bus fd, return from i2c_open */
